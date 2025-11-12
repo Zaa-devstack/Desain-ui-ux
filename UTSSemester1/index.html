@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Daftar Seminar TA</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3>Form Daftar Seminar TA</h3>
+        <form>
+            <div class="left-column">
+                <label for="nim">NIM :</label>
+                <input type="text" id="nim" name="nim">
+
+                <label for="nama">Nama :</label>
+                <input type="text" id="nama" name="nama">
+
+                <label for="prodi">Prodi :</label>
+                <select id="prodi" name="prodi">
+                    <option value="sistem-informasi" selected>Sistem Informasi</option>
+                    <option value="teknik-informatika">Teknik Informatika</option>
+                    <option value="manajemen">Manajemen</option>
+                </select>
+
+                <label for="tanggal-seminar">Tanggal Seminar :</label>
+                <input type="date" id="tanggal-seminar" name="tanggal-seminar">
+
+                <label for="jam-seminar">Jam Seminar :</label>
+                <input type="text" id="jam-seminar" name="jam-seminar" placeholder="HH:MM">
+
+                <label for="ruangan">Ruangan :</label>
+                <input type="text" id="ruangan" name="ruangan">
+
+                <div class="buttons">
+                    <button type="submit">Update</button>
+                    <button type="reset">Hapus</button>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <label for="judul-ta">Judul TA:</label>
+                <textarea id="judul-ta" name="judul-ta" rows="3"></textarea>
+
+                <label for="seminar">Seminar :</label>
+                <select id="seminar" name="seminar">
+                    <option value="proposal" selected>Proposal</option>
+                    <option value="hasil">Hasil</option>
+                    <option value="pendadaran">Pendadaran</option>
+                </select>
+
+                <label for="pembimbing">Pembimbing :</label>
+                <select id="pembimbing" name="pembimbing">
+                    <option value="sirojul" selected>Sirojul Munir S.SI, M.KOM</option>
+                    <option value="dosen2">Dosen 2</option>
+                </select>
+
+                <label for="penguji1">Penguji 1 :</label>
+                <select id="penguji1" name="penguji1">
+                    <option value="ahmad" selected>Ahmad Rio M.SI</option>
+                    <option value="dosen3">Dosen 3</option>
+                </select>
+
+                <label for="penguji2">Penguji 2 :</label>
+                <select id="penguji2" name="penguji2">
+                    <option value="amalia" selected>Amalia Rahmah M.T</option>
+                    <option value="dosen4">Dosen 4</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
